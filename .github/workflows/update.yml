@@ -19,8 +19,30 @@ on:
   workflow_dispatch:
     inputs:
       index:
-        description: "Override the index (e.g. NIFTY_50)"
+        description: "Index to trade"
+        type: choice
         required: false
+        default: ""
+        options:
+          - ""
+          - NIFTY_50
+          - NIFTY_100
+          - NIFTY_200
+          - NIFTY_NEXT_50
+          - NIFTY_MIDCAP_150
+          - NIFTY_SMALLCAP_250
+          - NIFTY_MIDSMALLCAP_400
+          - NIFTY_TOTAL_MARKET
+          - NIFTY_MICROCAP_250
+          - NIFTY_LARGEMIDCAP_250
+      start_date:
+        description: "Start date, YYYY-MM-DD (forces a replay)"
+        required: false
+        default: ""
+      start_cash:
+        description: "Opening capital in INR (forces a replay)"
+        required: false
+        default: ""
       reset:
         description: "Discard state and replay from the start date"
         type: boolean
@@ -64,11 +86,35 @@ jobs:
 
       - name: Advance the paper trade
         working-directory: engine-src
+        # inputs go through env, not string interpolation, so a value can
+        # never be spliced into the shell command
+        env:
+          IN_INDEX: ${{ inputs.index }}
+          IN_START_DATE: ${{ inputs.start_date }}
+          IN_START_CASH: ${{ inputs.start_cash }}
+          IN_RESET: ${{ inputs.reset }}
         run: |
-          python -m engine.runner \
-            --public-dir "$GITHUB_WORKSPACE" \
-            ${{ inputs.index && format('--index {0}', inputs.index) || '' }} \
-            ${{ inputs.reset && '--reset' || '' }}
+          args=(--public-dir "$GITHUB_WORKSPACE")
+          reset=false
+          if [ -n "$IN_INDEX" ]; then
+            args+=(--index "$IN_INDEX")
+          fi
+          # start date and capital are baked into saved state, so changing
+          # either only takes effect on a full replay
+          if [ -n "$IN_START_DATE" ]; then
+            args+=(--start-date "$IN_START_DATE"); reset=true
+          fi
+          if [ -n "$IN_START_CASH" ]; then
+            args+=(--start-cash "$IN_START_CASH"); reset=true
+          fi
+          if [ "$IN_RESET" = "true" ]; then
+            reset=true
+          fi
+          if [ "$reset" = "true" ]; then
+            args+=(--reset)
+          fi
+          echo "runner args: ${args[*]}"
+          python -m engine.runner "${args[@]}"
 
       - name: Render the page
         working-directory: engine-src
