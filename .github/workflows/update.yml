@@ -45,16 +45,16 @@ jobs:
 
     steps:
       - name: Check out this (public) repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: Check out strategy code (private)
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           repository: ${{ vars.PRIVATE_REPO || 'meet-minimalist/trading-strategy-paper-trader' }}
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: engine-src
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -117,9 +117,9 @@ jobs:
           cp -r data _site/ 2>/dev/null || true
           touch _site/.nojekyll
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
