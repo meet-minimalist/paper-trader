@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22 23:31 IST",
+ "generated_at": "2026-09-22 23:39 IST",
  "strategy": {
   "key": "champion_exp85",
   "title": "Quad-horizon momentum rotation",
@@ -29,6 +29,7 @@
   "equity": 1032314.02,
   "cash": 58270.79,
   "invested": 974043.23,
+  "holdings_cost": 891172.36,
   "total_return_pct": 3.23,
   "total_pnl": 32314.02,
   "realised_pnl": -49499.72,
