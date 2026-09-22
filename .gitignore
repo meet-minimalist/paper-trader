@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# strategy code is checked out here by CI - must never be committed
+engine-src/
+_site/
