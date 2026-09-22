@@ -11,9 +11,14 @@ payload.json                     the same data as JSON
 data/prices_<index>/<year>.csv   daily OHLCV cache, reusable
 ```
 
-Everything here is generated. The strategy code, the portfolio state and
-the job that produces this page live in a separate private repository and
-are never checked out in this repo's workflows.
+Everything committed here is generated. The strategy itself lives in a
+separate private repository; the daily job checks it out into
+`engine-src/`, which `.gitignore` excludes and a guard step verifies is
+never tracked, so no strategy code is committed here.
+
+The workflow runs only on a schedule or a manual dispatch. It must stay
+that way: GitHub withholds secrets from fork pull requests, and that is
+what keeps the private-repo token out of an outsider's reach.
 
 ## Price data
 
