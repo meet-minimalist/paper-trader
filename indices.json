@@ -211,6 +211,16 @@
    "file": "payload_ml_rank__nifty_next_50.json",
    "universe_size": 20,
    "total_return_pct": -2.82
+  },
+  {
+   "index": "SP500",
+   "label": "S&P 500",
+   "market": "US",
+   "strategy": "ml_rank",
+   "strategy_title": "ML rank rotation (LightGBM)",
+   "file": "payload_ml_rank__sp500.json",
+   "universe_size": 503,
+   "total_return_pct": 22.08
   }
  ]
 }
