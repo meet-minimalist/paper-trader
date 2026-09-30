@@ -10,7 +10,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_total_market.json",
    "universe_size": 441,
-   "total_return_pct": 2.4
+   "total_return_pct": 1.92
   },
   {
    "index": "NIFTY_MIDSMALLCAP_400",
@@ -20,7 +20,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_midsmallcap_400.json",
    "universe_size": 236,
-   "total_return_pct": 5.86
+   "total_return_pct": 6.33
   },
   {
    "index": "NIFTY_SMALLCAP_250",
@@ -30,7 +30,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_smallcap_250.json",
    "universe_size": 145,
-   "total_return_pct": 5.92
+   "total_return_pct": 6.03
   },
   {
    "index": "NIFTY_MICROCAP_250",
@@ -40,7 +40,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_microcap_250.json",
    "universe_size": 139,
-   "total_return_pct": 10.22
+   "total_return_pct": 9.75
   },
   {
    "index": "NIFTY_LARGEMIDCAP_250",
@@ -50,7 +50,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_largemidcap_250.json",
    "universe_size": 157,
-   "total_return_pct": -9.16
+   "total_return_pct": -9.55
   },
   {
    "index": "NIFTY_MIDCAP_150",
@@ -60,7 +60,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_midcap_150.json",
    "universe_size": 91,
-   "total_return_pct": -6.42
+   "total_return_pct": -6.29
   },
   {
    "index": "NIFTY_200",
@@ -70,7 +70,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_200.json",
    "universe_size": 127,
-   "total_return_pct": -7.55
+   "total_return_pct": -8.08
   },
   {
    "index": "NIFTY_100",
@@ -80,7 +80,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_100.json",
    "universe_size": 66,
-   "total_return_pct": -11.35
+   "total_return_pct": -11.87
   },
   {
    "index": "NIFTY_50",
@@ -90,7 +90,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_50.json",
    "universe_size": 46,
-   "total_return_pct": -13.46
+   "total_return_pct": -13.92
   },
   {
    "index": "NIFTY_NEXT_50",
@@ -100,7 +100,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_nifty_next_50.json",
    "universe_size": 20,
-   "total_return_pct": -4.15
+   "total_return_pct": -3.99
   },
   {
    "index": "SP500",
@@ -110,7 +110,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_sp500.json",
    "universe_size": 503,
-   "total_return_pct": 46.3
+   "total_return_pct": 48.08
   },
   {
    "index": "NIFTY_TOTAL_MARKET",
@@ -120,7 +120,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_total_market.json",
    "universe_size": 441,
-   "total_return_pct": 13.72
+   "total_return_pct": 13.96
   },
   {
    "index": "NIFTY_MIDSMALLCAP_400",
@@ -130,7 +130,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_midsmallcap_400.json",
    "universe_size": 236,
-   "total_return_pct": 7.56
+   "total_return_pct": 8.07
   },
   {
    "index": "NIFTY_SMALLCAP_250",
@@ -140,7 +140,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_smallcap_250.json",
    "universe_size": 145,
-   "total_return_pct": 18.8
+   "total_return_pct": 19.58
   },
   {
    "index": "NIFTY_MICROCAP_250",
@@ -150,7 +150,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_microcap_250.json",
    "universe_size": 139,
-   "total_return_pct": 17.94
+   "total_return_pct": 17.91
   },
   {
    "index": "NIFTY_LARGEMIDCAP_250",
@@ -160,7 +160,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_largemidcap_250.json",
    "universe_size": 157,
-   "total_return_pct": -0.59
+   "total_return_pct": -1.11
   },
   {
    "index": "NIFTY_MIDCAP_150",
@@ -170,7 +170,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_midcap_150.json",
    "universe_size": 91,
-   "total_return_pct": -6.66
+   "total_return_pct": -6.33
   },
   {
    "index": "NIFTY_200",
@@ -180,7 +180,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_200.json",
    "universe_size": 127,
-   "total_return_pct": -2.93
+   "total_return_pct": -3.81
   },
   {
    "index": "NIFTY_100",
@@ -190,7 +190,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_100.json",
    "universe_size": 66,
-   "total_return_pct": -8.75
+   "total_return_pct": -9.18
   },
   {
    "index": "NIFTY_50",
@@ -200,7 +200,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_50.json",
    "universe_size": 46,
-   "total_return_pct": -10.29
+   "total_return_pct": -10.86
   },
   {
    "index": "NIFTY_NEXT_50",
@@ -210,7 +210,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__nifty_next_50.json",
    "universe_size": 20,
-   "total_return_pct": -4.25
+   "total_return_pct": -4.13
   },
   {
    "index": "SP500",
@@ -220,7 +220,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__sp500.json",
    "universe_size": 503,
-   "total_return_pct": 20.95
+   "total_return_pct": 21.45
   }
  ]
 }
