@@ -110,7 +110,7 @@
    "strategy_title": "Quad-horizon momentum rotation",
    "file": "payload_sp500.json",
    "universe_size": 503,
-   "total_return_pct": 30.08
+   "total_return_pct": 28.85
   },
   {
    "index": "NIFTY_TOTAL_MARKET",
@@ -220,7 +220,7 @@
    "strategy_title": "ML rank rotation (LightGBM)",
    "file": "payload_ml_rank__sp500.json",
    "universe_size": 503,
-   "total_return_pct": 11.66
+   "total_return_pct": 10.18
   }
  ]
 }
